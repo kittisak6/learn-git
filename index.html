@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Kittisak</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #f5f6fa;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        header h1 { font-size: 48px; margin: 0; }
+        header p { font-size: 20px; margin-top: 10px; }
+
+        /* Section */
+        section {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+        h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        .underline {
+            width: 60px;
+            height: 4px;
+            background: #2575fc;
+            margin-bottom: 20px;
+        }
+
+        /* About */
+        .about-box {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.06);
+            line-height: 1.8;
+        }
+
+        /* Skills */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+        }
+        .skill {
+            background: white;
+            padding: 15px;
+            text-align: center;
+            border-radius: 10px;
+            font-weight: bold;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        }
+
+        /* Projects */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        .project-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.07);
+            transition: 0.3s;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        .project-card h3 {
+            margin-top: 0;
+        }
+
+        /* Contact */
+        .contact {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .contact a {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 22px;
+            background: #2575fc;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .contact a:hover {
+            background: #6a11cb;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+            background: #222;
+            color: #eee;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Kittisak Nonpala</h1>
+        <p>Student | Programmer | Web Developer</p>
+    </header>
+
+    <!-- About -->
+    <section>
+        <h2>เกี่ยวกับฉัน</h2>
+        <div class="underline"></div>
+        <div class="about-box">
+            สวัสดีครับ ผมกิตติศักดิ์ เป็นนักศึกษาที่สนใจด้านการเขียนโปรแกรมและการสร้างเว็บไซต์  
+            ชอบเรียนรู้เทคโนโลยีใหม่ๆ และชอบทำงานที่ท้าทายเพื่อพัฒนาทักษะของตัวเอง
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section>
+        <h2>ทักษะของฉัน</h2>
+        <div class="underline"></div>
+        <div class="skills-grid">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Python</div>
+            <div class="skill">Git / GitHub</div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section>
+        <h2>ผลงานเด่น</h2>
+        <div class="underline"></div>
+        <div class="projects">
+            <div class="project-card">
+                <h3>Project 1</h3>
+                <p>เว็บไซต์โปรไฟล์ส่วนตัวด้วย HTML/CSS</p>
+            </div>
+            <div class="project-card">
+                <h3>Project 2</h3>
+                <p>แอปคำนวณด้วย JavaScript</p>
+            </div>
+            <div class="project-card">
+                <h3>Project 3</h3>
+                <p>ระบบจัดการข้อมูลด้วย Python</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact">
+        <h2>ติดต่อฉัน</h2>
+        <div class="underline"></div>
+
+        <a href="mailto:kittisak@example.com">Email</a>
+        <a href="https://github.com/" target="_blank">GitHub</a>
+        <a href="https://facebook.com/" target="_blank">Facebook</a>
+    </section>
+
+    <footer>
+        © 2026 Kittisak Nonpala | Portfolio
+    </footer>
+
+</body>
+</html>
+``
